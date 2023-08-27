@@ -1,1 +1,1 @@
-# sneha-script
+script
