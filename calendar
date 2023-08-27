@@ -1,0 +1,19 @@
+#!/bin/bash
+cyear=$(date +%Y)
+pyear=$((cyear - 1))
+fyear=$((cyear -1))
+
+echo "choose year from calendar:"
+read year
+
+echo "choose month from calendar:"
+read month
+
+if [ "$month" -lt 1 ] || [ "$month" -gt 12 ]; then
+        echo "Month you have entered is invalid."
+
+fi
+echo "calendar for $month/$year:"
+cal $month $year
+
+exit 0
